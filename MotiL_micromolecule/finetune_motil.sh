@@ -76,3 +76,23 @@ python train.py \
     --exp_id esol \
     --metric rmse \
     --checkpoint_path "./dumped/pre-train/1-model/original_CMPN_0707_0800_12000th_epoch.pkl"
+
+# Fragnet Input
+python train.py \
+    --data_path ./data/fragnet_input.csv \
+    --exp_id fragnet \
+    --dataset_type regression \
+    --metric r2 \
+    --epochs 100 \
+    --num_runs 3 \
+    --gpu 5 \
+    --batch_size 64 \
+    --seed 2024 \
+    --init_lr 1e-3  \
+    --final_lr 1e-6 \
+    --wd 1e-5 \
+    --warmup_epochs 0.0 \
+    --split_type 'scaffold_balanced' \
+    --exp_name finetune \
+    --step 'finetune' \
+    --checkpoint_path "./dumped/pre-train/1-model/original_CMPN_0707_0800_12000th_epoch.pkl"
