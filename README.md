@@ -25,3 +25,5 @@ EC [MotiL_macromolecule/nohup.out.ec](MotiL_macromolecule/nohup.out.ec)
 
 
 https://data.pyg.org/whl/torch-1.12.0%2Bcu113/torch_scatter-2.0.9-cp37-cp37m-linux_x86_64.whl
+
+https://data.pyg.org/whl/torch-2.4.1+cu121.html
